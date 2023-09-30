@@ -20,6 +20,7 @@ cpu_limit = "0.5"
 memory_limit = "256Mi"
 env_variable_name = "version"
 env_variable_value = "1.0"
+pvc_volume = "1Gi"
 
 #Render the template with variables
 rendered_template = template.render(
@@ -34,6 +35,7 @@ rendered_template = template.render(
   MEMORY_LIMIT=memory_limit,
   ENV_VARIABLE_NAME=env_variable_name,
   ENV_VARIABLE_VALUE=env_variable_value,
+  PVC_VOLUME=pvc_volume,
 )
 
 #Write the rendered template to deployment.yaml
