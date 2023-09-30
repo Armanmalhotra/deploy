@@ -13,6 +13,8 @@ pipeline {
     string(name: 'MEMORY_LIMIT', description: 'Memory Limit')
     string(name: 'ENV_VARIABLE_NAME', description: 'Environment Variable Name')
     string(name: 'ENV_VARIABLE_VALUE', description: 'Environment Variable Value')
+    string(name: 'PVC_VOLUME', description: 'PVC volume')
+
   }
 
   stages {
