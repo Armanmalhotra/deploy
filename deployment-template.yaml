@@ -17,6 +17,9 @@ spec:
    containers:
    - name: {{ CONTAINER_NAME }}
     image: {{ DOCKER_IMAGE }}
+   - env:
+     - name: {{ ENV_VARIABLE_NAME }}
+       value: {{ ENV_VARIABLE_VALUE }}
     ports:
     - containerPort: {{ CONTAINER_PORT }}
     resources:
