@@ -12,6 +12,8 @@ spec:
    labels:
     app: {{ APP_NAME }}
   spec:
+   volumes:
+   - name: {{PVC_VOLUME}}
    containers:
    - name: {{ CONTAINER_NAME }}
     image: {{ DOCKER_IMAGE }}
